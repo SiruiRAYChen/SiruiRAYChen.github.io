@@ -1,0 +1,30 @@
+# Hugo build files
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Theme (keep if using submodule)
+# themes/
+
+# Temporary files
+*.log
+.hugo_build.lock

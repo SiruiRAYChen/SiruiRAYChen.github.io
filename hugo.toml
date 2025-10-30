@@ -1,0 +1,64 @@
+baseURL = 'https://siruiraychen.com/'
+languageCode = 'en-us'
+title = 'Sirui (Ray) Chen'
+theme = 'PaperMod'
+
+[params]
+description = "Computer Science & Mathematics Graduate Student | AI & High-Performance Computing Enthusiast"
+author = "Sirui (Ray) Chen"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+disableThemeToggle = false
+
+[params.homeInfoParams]
+Title = "Hi, I'm Ray Chen 👋"
+Content = """
+Exploration-driven and technically versatile Computer Science and Mathematics graduate student with strong foundations in computer architecture, machine learning, and deep learning. Currently pursuing my Master's at **Northwestern University**.
+
+I'm passionate about leveraging GPUs and advanced architectures to accelerate deep learning and high-performance workloads.
+"""
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:ray_chensirui@hotmail.com"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/SiruiRAYChen"
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+identifier = "experience"
+name = "Experience"
+url = "/experience/"
+weight = 30
+
+[[menu.main]]
+identifier = "posts"
+name = "Blog"
+url = "/posts/"
+weight = 40
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

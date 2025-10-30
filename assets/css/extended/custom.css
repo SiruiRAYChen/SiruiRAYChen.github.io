@@ -1,0 +1,64 @@
+/* Custom styles for images */
+
+/* Profile image on About page - floated with text wrap */
+.post-content img[alt="Profile Picture"],
+.page-content img[alt="Profile Picture"],
+article img[alt="Profile Picture"] {
+    width: 100% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    border-radius: 50% !important;
+    float: right !important;
+    margin: 0 0 1.5rem 1.5rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    display: inline !important;
+}
+
+/* Clear float after profile section if needed */
+.post-content::after,
+.page-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Logo/icon sized images (inline with headings) */
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Alternative: for images that should be emoji/logo size */
+img[alt*="logo"],
+img[alt*="icon"] {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+
+/* Blog post header images */
+.post-content > p:first-of-type img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .post-content img[alt="Profile Picture"],
+    .page-content img[alt="Profile Picture"],
+    article img[alt="Profile Picture"] {
+        max-width: 180px !important;
+        float: none !important;
+        display: block !important;
+        margin: 0 auto 1.5rem auto !important;
+    }
+}
